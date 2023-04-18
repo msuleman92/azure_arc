@@ -30,7 +30,7 @@
       "value": false
     },
     "templateBaseUrl": {
-      "value": "https://github.com/msuleman92/azure_arc/tree/main/azure_arc_data_jumpstart/microk8s/azure/arm_template/"
+      "value": "https://raw.githubusercontent.com/msuleman92/azure_arc/main/azure_arc_data_jumpstart/microk8s/azure/arm_template/"
     },
     "deployBastion": {
       "value": false
