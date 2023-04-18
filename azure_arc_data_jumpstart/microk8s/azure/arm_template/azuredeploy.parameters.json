@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "sshRSAPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCjdgOXfAV4ZvO67CudfmLmTbGGAvJ30VhXa+xHScoBMY6mo24ypaxPP/bhNRN4XxJEF8p1aFjJAPnVDgq2NICxrXFtP+htL36Iu95XPNmq3jwXiu0U+bK9Tj6V3cVV7w7HD4i4KJTRgfGZfzHo4Wq2j0Pt98VZAyZiyhnVtweVWDJ2b61HTIUfWdaKzz8I9HRXKtKbuX4GVkvNOKv7FEiW/I9bj5ZwEc49+hA2PxIi8VRuf4Fwn4PaVOll4FAsw3l0oiSxgs8UhtDQrukte+Vo+ywXTEQtvHFYkDt9r7WS7jaic0W7mEFSXKesDqTVBjPhlw2g1swYRITBOoAuabqa9P1KnPmiI1JxGcAEPyy0uS913kPVW60them5Qjj10S7rmCQ7ChOFCd9uiHM/tz1NbCyIzkcQCIQWmu/3hqyGbwoJk7lJBa5/Zd5kIUx/hvH4aHNQ38TqKZyndIG7gLsRxW70e7r3Q7RU2i3VoB2XTxsXe+iQtsyFeqS02GfQQ9sH5e5lqa+7ZL6D+2czgaL99Iik3CQj92Rxu5gPk1J609h+2GwKB4Pn9VVsL07uPV75V2zLAPkuD4MKV+aHL3n3Le8pWCFwFnJtL/DAABjtTwVaLk+Ppjx9aysKYjHHhmjjfPs5AGzFTmv2oQW8IoW75GGHfiUhnp0XSK1uPJbNgw== rsa-key-20230418"
+    },
+    "spnClientId": {
+      "value": "fd57f402-c051-4362-9756-088ee808654e"
+    },
+    "spnClientSecret": {
+      "value": "Ye48Q~CpcXV1ngBo.cQlxH_2sZJGU-49.WxZQddI"
+    },
+    "spnTenantId": {
+      "value": "d0748657-f5a8-4d8b-8a16-b848c23ea8cb"
+    },
+    "windowsAdminUsername": {
+      "value": "arcdemo"
+    },
+    "windowsAdminPassword": {
+      "value": "ArcPassword123!!"
+    },
+    "logAnalyticsWorkspaceName": {
+      "value": "arck8op"
+    },
+    "deploySQLMI": {
+      "value": true
+    },
+    "deployPostgreSQL": {
+      "value": false
+    },
+    "templateBaseUrl": {
+      "value": "https://raw.githubusercontent.com/microsoft/azure_arc/main/azure_arc_data_jumpstart/microk8s/azure/arm_template/"
+    },
+    "deployBastion": {
+      "value": false
+    },
+    "bastionHostName": {
+      "value": "<Azure Bastion Hostname>"
+    }
+  }
+}
