@@ -111,7 +111,7 @@ az k8s-extension create --name arc-data-services `
                         --cluster-name $Env:arcDataClusterName `
                         --resource-group $Env:resourceGroup `
                         --auto-upgrade false `
-                        --version 1.4.0
+                        --version 1.4.0 `
                         --scope cluster `
                         --release-namespace arc `
                         --config Microsoft.CustomLocation.ServiceAccount=sa-arc-bootstrapper `
@@ -165,7 +165,7 @@ az k8s-extension create --name "azure-defender" `
                         --cluster-type connectedClusters `
                         --extension-type Microsoft.AzureDefender.Kubernetes
 
-# Deploying Azure Arc Data Controller
+<# # Deploying Azure Arc Data Controller
 Write-Host "Deploying Azure Arc Data Controller"
 Write-Host "`n"
 
@@ -241,7 +241,7 @@ if ( $Env:deploySQLMI -eq $true -or $Env:deployPostgreSQL -eq $true ){
     $Favorite = $Shell.CreateShortcut($Env:USERPROFILE + "\Desktop\Kibana.url")
     $Favorite.TargetPath = $KibanaURL;
     $Favorite.Save()
-}
+} #>
 
 # Changing to Client VM wallpaper
 $imgPath="$Env:TempDir\wallpaper.png"
